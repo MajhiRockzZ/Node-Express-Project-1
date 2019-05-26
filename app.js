@@ -22,7 +22,7 @@ app.set('view engine', 'handlebars');
 // Index Route
 app.get('/', (req, res) => {
   // console.log(req.name);
-  const title = 'GudLu';
+  const title = 'Welcome';
   res.render('index', {
     title: title
   });
