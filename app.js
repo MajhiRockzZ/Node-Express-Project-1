@@ -16,12 +16,9 @@ mongoose
   .then(() => console.log('MongoDB Connected...'))
   .catch(err => console.log(err));
 
-// // How middleware works
-// app.use((req, res, next) => {
-//   // console.log(Date.now());
-//   req.name = 'Sumesh Majhi';
-//   next();
-// });
+// Load Idea Model
+require('./models/Idea');
+const Idea = mongoose.model('ideas');
 
 // Handlebars Middleware
 app.engine(
